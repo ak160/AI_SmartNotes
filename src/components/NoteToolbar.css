@@ -1,0 +1,125 @@
+/* src/styles/quill-overrides.css */
+
+/* 1) Toolbar container */
+.ql-snow .ql-toolbar {
+  /* Use your theme's default background & divider color */
+  background: var(--mui-palette-background-default) !important;
+  border: 1px solid var(--mui-palette-divider) !important;
+  border-bottom: none !important;   /* if you like no bottom border */
+  border-radius: 4px 4px 0 0 !important;
+  box-shadow: none !important;
+}
+
+/* 2) Toolbar buttons & selects */
+.ql-toolbar .ql-formats button,
+.ql-toolbar .ql-formats select {
+  /* icon/text color */
+  color: var(--mui-palette-text-primary) !important;
+  /* transparent background so hover shows through */
+  background: transparent !important;
+  border: none !important;
+  margin: 0 2px !important;
+}
+
+/* 3) Hover & active states */
+.ql-toolbar .ql-formats button:hover,
+.ql-toolbar .ql-formats select:hover {
+  background: var(--mui-palette-action-hover) !important;
+  border-radius: 4px !important;
+}
+
+/* 4) SVG icons (stroke & fill) */
+.ql-toolbar .ql-formats button svg path,
+.ql-toolbar .ql-formats button svg g {
+  stroke: var(--mui-palette-text-primary) !important;
+  fill: var(--mui-palette-text-primary) !important;
+}
+
+/* 5) Dropdown pickers */
+.ql-snow .ql-picker-label {
+  color: var(--mui-palette-text-primary) !important;
+}
+.ql-snow .ql-picker {
+  background: var(--mui-palette-background-paper) !important;
+  border: 1px solid var(--mui-palette-divider) !important;
+  border-radius: 4px !important;
+}
+.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  background: var(--mui-palette-background-paper) !important;
+  border: 1px solid var(--mui-palette-divider) !important;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1) !important;
+}
+
+/* 6) Picker items */
+.ql-snow .ql-picker-item {
+  color: var(--mui-palette-text-primary) !important;
+}
+.ql-snow .ql-picker-item:hover {
+  background: var(--mui-palette-action-hover) !important;
+}
+
+/* 7) Sliders (e.g. font size) */
+.ql-snow .ql-picker.ql-expanded .ql-picker-options .ql-size-item {
+  color: var(--mui-palette-text-primary) !important;
+}
+
+/* 8) Code block toolbar button */
+.ql-toolbar .ql-formats .ql-code-block::before {
+  color: var(--mui-palette-text-primary) !important;
+}
+
+/* 9) Force the toolbar to stick when scrolling in your NotesPanel */
+#toolbar.ql-toolbar.ql-snow {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+/* ===== Header dropdown styling ===== */
+/* src/styles/quill-overrides.css */
+
+/* Base (light mode) */
+.ql-toolbar .ql-header {
+  padding: 4px 8px;
+  border: 1px solid #1976d2;          /* MUI primary blue */
+  background: #99cbee;          /* light blue 50 */
+  color: #0d47a1;                     /* dark primary */
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  
+}
+
+/* Hover in light mode */
+.ql-toolbar .ql-header:hover {
+  background-color: #73b9f3;          /* light blue 100 */
+}
+
+/* Active/focused in light mode */
+.ql-toolbar .ql-header:focus,
+.ql-toolbar .ql-header:active {
+  background-color: #1976d2;          /* primary */
+  color: #f7cbcb;
+  outline: none;
+}
+
+/* ===== Dark mode tweaks ===== */
+@media (prefers-color-scheme: dark) {
+  .ql-toolbar .ql-header {
+    background-color: #37474f;        /* blue-grey 800 */
+    border: 1px solid #90caf9;        /* light blue 200 */
+    color: #4bbff4;                   /* light cyan */
+  }
+  .ql-toolbar .ql-header:hover {
+    background-color: #455a64;        /* blue-grey 700 */
+  }
+  .ql-toolbar .ql-header:focus,
+  .ql-toolbar .ql-header:active {
+    background-color: #90caf9;        /* light blue 200 */
+    color: #0d47a1;                   /* dark primary */
+  }
+  .ql-toolbar .ql-header option {
+    background-color: #37474f;
+    color: #20aff1;
+  }
+}
