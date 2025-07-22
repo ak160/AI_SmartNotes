@@ -34,11 +34,8 @@
   You can see the live demo by clicking the link below:
 </p>
 
-<a href="https://ak160.github.io/AI_SmartNotes/" 
-   style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: linear-gradient(90deg, #00c6ff, #0072ff); border-radius: 6px; color: white; text-decoration: none; font-weight: bold; font-size: 16px; width: fit-content;">
-  <img src="./src/assets/ai-technology.png" width="20" height="20" style="vertical-align: middle;">
-  Live Demo
-</a>
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blueviolet?style=for-the-badge&logo=rocket)](https://ak160.github.io/AI_SmartNotes/)
+
 
 ---
 <h2 style="font-size: 24px;">🛠️ Note </h2>
