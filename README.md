@@ -1,12 +1,48 @@
-# React + Vite
+# <img src="./src/assets/ai.png" width="30" height="30" style="vertical-align: middle; margin-right: 6px;"> <span style="font-weight: bold; font-size: 28px;">AI Smart Notes</span>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ✨ A powerful, modern note-taking app powered by OpenAI. Take notes, highlight ideas, and let AI summarize them for you!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2 style="font-size: 24px;">🚀 Features</h2>
 
-## Expanding the ESLint configuration
+<ul style="list-style-type: none; padding-left: 0; font-size: 16px; line-height: 1.6;">
+  <li>✨ <span style="font-weight:bold;">Create, edit, and delete notes</span></li>
+  <li>✨ <span style="font-weight:bold;">Add images, scripts, and highlighted text to your notes</span></li>
+  <li>✨ <span style="font-weight:bold;">AI-powered note summarization and more, using OpenAI models</span></li>
+  <li>✨ <span style="font-weight:bold;">Search notes by title or content</span></li>
+  <li>✨ <span style="font-weight:bold;">Responsive design for mobile and desktop</span></li>
+  <li>✨ <span style="font-weight:bold;">Dark mode support</span></li>
+  <li>✨ <span style="font-weight:bold;">PDF annotation support</span></li>
+</ul>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+<h2 style="font-size: 24px;">🛠️ Technologies Used</h2>
+
+<ul style="list-style-type: none; padding-left: 0; font-size: 16px; line-height: 1.6;">
+  <li><span style="font-weight:bold;">⚛️ React</span></li>
+  <li><span style="font-weight:bold;">🟨 JavaScript</span></li>
+  <li><span style="font-weight:bold;">🧠 Puter.js</span></li>
+</ul>
+
+---
+
+<h2 style="font-size: 24px;">📌 Demo</h2>
+
+<p style="font-size: 16px;">
+  You can see the live demo by clicking the link below:
+</p>
+
+<a href="https://ak160.github.io/AI_SmartNotes/" 
+   style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: linear-gradient(90deg, #00c6ff, #0072ff); border-radius: 6px; color: white; text-decoration: none; font-weight: bold; font-size: 16px; width: fit-content;">
+  <img src="./src/assets/ai-technology.png" width="20" height="20" style="vertical-align: middle;">
+  Live Demo
+</a>
+
+---
+<h2 style="font-size: 24px;">🛠️ Note </h2>
+<p style="font-size: 16px;">
+  This project is a work in progress. If you have any suggestions or find any issues, please feel free to open an issue on the GitHub repository.<br>
+  i will add more features in the future.
+</p>
