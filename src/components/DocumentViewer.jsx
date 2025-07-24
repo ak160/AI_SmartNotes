@@ -28,7 +28,10 @@ import { useAI } from '../hooks/useAI';
 
 import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'react-pdf/node_modules/pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 import 'react-pdf/dist/Page/TextLayer.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
